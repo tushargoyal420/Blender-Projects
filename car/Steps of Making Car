@@ -1,0 +1,186 @@
+~Open Blender.
+~Creata a new Genreal file.
+~Press A(To select all) then Press X(To delete) and hit enter to delete all.
+
+#TO MAKE A BODY OF CAR:
+
+~Press Shift+A to add a cube.
+~Press Ctrl+R to loop cuts. and cut that cube into vertically two part.
+~Then add a Mirror modifier into it along X axis.
+~Then adjust its size using S along their respective axis.
+~Then add a Subdivision Surface modifier and then increase its viewpoint.
+~Switch to vertexmode and resize the shape into car uppr body.
+~Using Alt+M to merge two vertex together.
+~Using G adjust the postion of vertex to give a finishing in the body.
+~Then  select the uppr sided faces to make a uppr glasss then press P and then select the selection option. To make it new object.
+~Similarly repeat these step to make lower body of the car.
+~After that repeat these steps to make middle body of the car.
+~Add a cube at the back of the car to make a number plate.
+
+#MAKING CAR TYRES:
+
+~Press Shift+A to add a Cylinder and then place it at the bottom of the car.
+~Using I making its Inset faces and then extrude them to make alloy of the tyre.
+~Then add a Solidify Modifier and adjust its Thickness.
+~Also add a Subdivision Surface modifier and then increase its viewpoint.
+~Then Using Shift+D make copy of that tyre and place it at the back of the car.
+~Similarly Make copy of it to make another 2 tyres.
+
+#MAKING CAR Lights:
+
+~Press Shift+A to add a cylinder and then place it into front of the car.
+~Then adjust its size.
+~Using extrude and resize tools make it look like car headlights.
+~Then Press Shift+D to make copy of it and then place it the other side of front car.
+~Then Press Shift+D to make copy of it and then place it the at the back side of the car.
+
+#MAKING ROAD AND PILLER:
+
+~Press Shift+A to add a cube.
+~Then using S adjust its size and place it at the bottom of the car.
+~Cut the cube at the center using loop cuts (ctrl+R).
+~Then add a Mirror modifier into it along X axis.
+~Cut that cube into many parts horizontally and vertically to make a center white lines of the road.
+~At the side makes piller by adding cylinder and using extrude tool give finishing to it.
+~By making copy of it place it into complete road.
+
+#MAKING Road side Trees And Side ground:
+
+~Press F3 and then write sepling tree in pop window and then press enter to add a Tree.
+~Place it side of the road.
+~Then go to geometry options of the tree there is a option of leaves select it and then check the box Show leaves to make a leaves on the tree.
+~Place that leaves at the tree.
+~Make copy of it and make a line of tree at side of the road.
+
+~Press Shift+A and add a Landscape into it and place it side of the road.
+~Then adjust its size.
+
+#MAKING BACKGROUND:
+
+~Add a plane and place it into side of the road and landscape to make a background.
+~Adjust its size.
+
+#ADDING LIGHTS: 
+(IN CAR): 
+~Press Shift+A and add a Spot lights and then place it into front of the car headliight and then increase its power.
+~rotate the light into direction of road.
+~Then make adjust its size and radius.
+~Make copy of it and place it on every headlight and back lights of the car.
+~At the back side change the color(Red) of two light to make a break lights.
+
+~Press Shift+A and add a Area lights and then place it at the bottom of the car and then increase its power.
+~Adjust its size.
+~Change its color to blue.
+
+~In the final select all lights and then make them child of the car.
+
+(Road side pillers):
+~Press Shift+A and add a Spot lights and then place it onto the pillers and then increase its power.
+~Make copy of it and place it on every pillers.
+
+(In background):
+~Press Shift+A and add a Spot lights and then place it on the top of side and then increase its power.
+~Add one more Area light at the top of the side view and increase its power.
+
+#MAKING MOVEBLE CAR:
+
+~Press Shift+A and add a empty cube and place it outside of the car.
+~Select all object of the car and make the empty cube as a parent of them. Except tyre.
+
+#MAKING MOVEBLE TYRES:
+
+~Press shift+A and then go to empty option and then add a Plane axis.
+~Then place it into one the one tyre.
+
+~Repeat these step and place plane axis seperatly on each tyres.
+
+~Then Add a new screen and then press N and then select the X axis in that pop up window.
+~Right click on it and then Click on the option Add driver.
+~Then a pop up window will open then Chagne type to Average values.
+~Then select transform channel.
+~Then select object (Empty cube outside the car) and select Y loaction in Type.
+~Select Local Space in Space option.
+
+~Now repeat these step Last 6 steps on all plane axis.
+
+~to check all tyre are rotate or not, Select the cube outside the car and move it along Y-Axis and see they work properly or not.
+
+#COLORING:
+
+~In right side their is a material properties toolbar click on that.
+~Then their is a " + " symbol option click on that then click " New " option.
+~Their is a option Viewport Display. In that option choose the color black and then select a face which i have to fill then click on the assign option.
+~Then adjust roughness, surface color, surface type, etc.
+
+~Repeat these steps to fill colors in car, background, Trees, Road, Pillers, etc.
+
+#ADJUST CAMERA AND ITS PATH:
+
+~Select the camera and " alt+ R " to clear resolution. 
+~Then place it into center. (Press N and then Set X,Y,Z= 0).
+~Press Shift+A and go to curve option then add a Bezier.
+~Then Press Tab to enter in edit mode then adjust the curve postion to make a camera path.
+~Using E to make a new segments into it.
+~Make a path for the camera using this bezier curve path.
+~Then select camera and then go to the object constraints properties then add a folow path of camera. then select that bezier curve as a path for camera.
+~Then check the follow curve option then click on the animate path option.
+~Then go to object constraints properties and add a track to and then select the empty cube(Car's parent) as a track of the camera. 
+~Then check the folow curve option then click on the animate path option.
+~Then select To: -Z   and Up: Y.
+~Then go to camera setting change its mode to ortographic and adjust its focal length according to car.
+
+#FILL COLOR FOR RENDERING:
+
+~Add a new screen and then open shading editor their.
+~Also add another screen and open 3D viewport their and press NUM0 to open camera view.
+~Now select that object which have to fill color and after selecting in the shading screen add New and then adjust the color and the other thing like Roughness, Shine, Metallic etc.
+
+~Repeat these steps and fill the color to all the objects.
+
+#TO ADD KEYFRAMES INTO CAR:
+
+~Select the empty cube of the car.
+~Press N to open trasform table.
+~Then go to timeline screen and then change its end frame to 250.
+~Then Select the empty cube and then Press right click on the Y location and then select add single keyframe option.
+~Similarly Select more keyframes to move the car.
+~In last to rotate the car in back direction right click on the X location then add single ketframe option.
+
+#RENDERING:
+~Go to output properties:
+~select the total frames.
+~select output as a FFMPEG video format.
+~select RGB colors.
+~resolution = 1920*1080
+~set location to save.
+~Then go to the RENDER option in the menu bar then select the render animation.
+~Now all frames are in processing to render.
+
+~~~~AFTER COMPLETING THE PROCESS GO TO THAT FILE LOCATION AND THERE IS A VIDEO OF THE OUR PROJECT.~~~~~~~
+
+
+
+#KEYS USE TO MAKE THESE PROJECT: 
+
+~Shift+A    to add new surface.
+~ctrl+R     Loop cuts.
+~E          Extrude.
+~A          To select all.
+~S          Size.
+~R          Rotate.
+~G          Move.
+~X          X Plane.
+~Z          Z Plane.
+~Y          Y Plane.
+~I          Inset Faces.
+~Alt+M      Merge two vertices.
+~Alt+R      clear rotation(camera).
+~ Hold '~'  To select the view(Top,bottom,left,right,front,back,camera,selected).
+~Shift+D    To make a copy of object.
+~Hold Shift To select more then 1 face/vertex/edge at a same time.
+~Hold Ctrl  To deselect face/vertex/edge at a same time.
+~Shift Z    To see wireframe.
+~NUM1       To front view.
+~NUM3       To side view.
+
+
