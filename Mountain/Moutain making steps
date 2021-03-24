@@ -1,0 +1,122 @@
+~Open Blender.
+~Creata a new Genreal file.
+~Press A(To select all) then Press X(To delete) and hit enter to delete all.
+
+#MAKING LANSCAPES:
+
+~Press Shift+A and then goto mesh option then select landscape.
+~Then adjust its size then goto sculpt mode adjust thier faces.
+~Then add two lanscapes and then give them shape.
+~Then add another landscapes and place them at the side of the ground.
+
+#WATER:
+
+~Then add a cube then place it at the top of the two landscapes.
+~Goto modifier tab then select subdivison modifier then increase its viewpoint.
+~Then Add another modifier= Displace modifier, then increese its viewpoint and then add a volonoid texture into it and adjust its size.
+~Then Add a Empty cube Press N and then click in rotational X axis and change its value to -360 and then right click on it select option (add Single key frame).
+~Then Select that cube as a parent of that river.
+~Then extrude its faces and make design like a river.
+
+#GROUND:
+
+~Add a Landscape and decrease its size along Z axis.
+~Resize it along y and x axis to make it wider.
+
+#BOAT:
+
+~Add a cube.
+~resize it.
+~Add subdivision surface modifier.
+~then adjust its viewpoint.
+~Add solidify modifier.
+~then adjust its thickness.
+~then move the vertices and give the shape of boat to that cube.
+
+#STONES:
+
+~Add a Isosphere and then resize it.
+~Then add two Isosphere to make double stones.
+~Then place them at there respective place.
+
+#LIGHT:
+
+~Add SUN and place it at the top of the lanscape.
+~Add point light and adjust their power.
+~Then place it at the top of the huts.
+
+#ADJUST CAMERA AND ITS PATH:
+
+~Select the camera and " alt+ R " to clear resolution. 
+~Then place it into center. (Press N and then Set X,Y,Z= 0).
+~Press Shift+A and go to curve option then add a circle.
+~then using S resize it, then place it outside the lanscapes.
+~Then decrease its size along X axis. to give a perfact shape.
+~then select camera and then go to the object constraints properties then add a follow path of camera. then select that circle as a path for camera.
+~Then check the follow curve option then click on the animate path option.
+~then select the circle and press Shift+D to make a copy of that circle and then press S to resize then place it inner side of older circle.
+~Then press Shift+A and then go to empty option and select a sphere and place it at the center(X=Y=Z=0).
+~Then go to object constraint properties then add a folow path of that sphere. then select that new circle.
+~Select the camera and go to object constraints properties and add a track to and then select the empty sphere as a track of the camera. 
+~Then check the folow curve option then click on the animate path option.
+~Then select To: -Z   and Up: Y.
+~Then go to camera setting change its mode to orthographic and adjust its focal length according to Landscape.
+
+
+#SET KEYFRMAS:
+
+~Select Boat.
+~Then press N to open transform table.
+~Then increase ro decrease the boat location at X,Y,Z axis and at every change press right click on it then select the option "Insert a sigle Keyframe" and then increase the time.
+
+#kEyfRAMES OF CAMERA:
+
+~Select the camera and then go to camera setting.
+~Add keyframes of the camera by right clicking on the focal length, Shift X and Y and then select Insert keyframes.
+~According to time and what object is to be focus adjust the camera focus lenght, Shift X, Y then insert keyframes. 
+
+#FILL COLOR FOR RENDERING:
+
+~Add a new screen and then open shading editor their.
+~Also add another screen and open 3D viewport their and press NUM0 to open camera view.
+~Now select that object which have to fill color and after selecting in the shading screen add New and then adjust the color and the other thing like Roughness, Shine, Metallic etc.
+
+~Repeat these steps and fill the color to all the object.
+
+
+#RENDERING:
+~Go to output properties:
+~select the total frames.
+~select output as a FFMPEG video format.
+~select RGB colors.
+~resolution = 1920*1080
+~set location to save.
+~Then go to the RENDER option in the menu bar then select the render animation.
+~Now all frames are in processing to render.
+
+~~~~AFTER COMPLETING THE PROCESS GO TO THAT FILE LOCATION AND THERE IS A VIDEO OF THE OUR PROJECT.~~~~~~~
+
+#KEYS USE TO MAKE THESE PROJECT: 
+
+~Shift+A    to add new surface.
+~ctrl+R     Loop cuts.
+~E          Extrude.
+~A          To select all.
+~S          Size.
+~R          Rotate.
+~G          Move.
+~X          X Plane.
+~Z          Z Plane.
+~Y          Y Plane.
+~I          Inset Faces.
+~Alt+M      Merge two vertices.
+~Alt+R      clear rotation(camera).
+~ Hold '~'  To select the view(Top,bottom,left,right,front,back,camera,selected).
+~Shift+D    To make a copy of object.
+~Hold Shift To select more then 1 face/vertex/edge at a same time.
+~Hold Ctrl  To deselect face/vertex/edge at a same time.
+~Shift Z    To see wireframe.
+~NUM1       To front view.
+~NUM3       To side view.
+
+
