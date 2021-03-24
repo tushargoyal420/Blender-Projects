@@ -1,0 +1,107 @@
+~Open Blender.
+~Creata a new Genreal file.
+~Press A(To select all) then Press X(To delete) and hit enter to delete all.
+
+#TO MAKE A Base:
+
+~Press Shift+A and select Cube.
+~Cut its loop at the center.
+~Add Mirror modifier.
+~Using Move tool Select the vertices of the cibe adjust them and place them at right place to give a shape of ship.
+~Using Extrude tool extrude faces and give degin to it.
+~Add Cylinder to make piller.
+~Then adjust its size then place them at right place.
+~To make a stairs add another cube.
+~To make a ship stairing add a cylinder and then using inset faces tool give finishing to it.
+~Then to make a Ship sail add a Nurbe surface and then adjust ist size.
+~To make a monkey Press Shift+A and then go to mesh option then there is a Monkey option then add it.
+~Then place it at the front of the ship.
+~When ship is completely ready then right click on it then Click on the option Smooth shape.
+~Then add Landscape and place it at the side of the ocean.
+~Then make copy of it then cover the ocean with lanscapes.
+
+#TO ADD PARTICLES:
+
+~Add a plane and then place at the front bottom of the ship and also on the back bottom  of the ship.
+~Then adjust its size.
+~then add mirror modifier of it.
+~Then go to particle option then add particles then adjust their number and their velocity.
+~Then Add a wind and place it into front of the ship.
+~Adjust its strength according to particles.
+~The  add a sphere.
+~Go to particle setting then go to render option then change its type to object and then select the sphere as a object of particles and then adjust its render size.
+
+#TO MAKE A ocean:
+
+~Then add a cube then place it at bottom.
+~Goto modifier tab then select subdivison modifier then increase its viewpoint.
+~Then Add another modifier= Displace modifier, then increese its viewpoint and then add a volonoid texture into it and adjust its size.
+~Then adjust the size of the cube according to ocean.
+~Then Add a Empty cube Press N and then click in rotational X axis and change its value to -360 and then right click on it select option (add Single key frame).
+~Then Select that cube as a parent of that ocean.
+
+
+#COLORING:
+
+~In right side their is a material properties toolbar click on that.
+~Then their is a " + " symbol option click on that then click " New " option.
+~Their is a option Viewport Display. In that option choose the color black and then select a face which i have to fill then click on the assign option.
+~Then adjust roughness, surface color, surface type, etc.
+
+~Repeat these steps to fill colors in every object.
+
+#SET KEYFRMAS:
+
+~Select ship.
+~Then press N to open transform table.
+~Then increase ro decrease the ship location at Z axis and at every change press right click on it then select the option "Insert a sigle Keyframe" and then increase the time.
+~Similarly Rotate the ship at Y axis or X axis and then Insert key frames.
+
+
+#CAMERA:
+
+~Press Shift+A and then add a camera.
+~Then change its type to orthographic and then adjust its focal length.
+
+#LIGHT:
+
+~Add a point light.
+~Then aadjust its power. then place it at the side of the ship.
+~then copy it then place at all corner of the ship.
+
+#RENDERING:
+~Go to output properties:
+~select the total frames.
+~select output as a FFMPEG video format.
+~select RGB colors.
+~resolution = 1920*1080
+~set location to save.
+~Then go to the RENDER option in the menu bar then select the render animation.
+~Now all frames are in processing to render.
+
+~~~~AFTER COMPLETING THE PROCESS GO TO THAT FILE LOCATION AND THERE IS A VIDEO OF THE OUR PROJECT.~~~~~~~
+
+#KEYS USE TO MAKE THESE PROJECT: 
+
+~Shift+A    to add new surface.
+~ctrl+R     Loop cuts.
+~E          Extrude.
+~A          To select all.
+~S          Size.
+~R          Rotate.
+~G          Move.
+~X          X Plane.
+~Z          Z Plane.
+~Y          Y Plane.
+~I          Inset Faces.
+~Alt+M      Merge two vertices.
+~Alt+R      clear rotation(camera).
+~ Hold '~'  To select the view(Top,bottom,left,right,front,back,camera,selected).
+~Shift+D    To make a copy of object.
+~Hold Shift To select more then 1 face/vertex/edge at a same time.
+~Hold Ctrl  To deselect face/vertex/edge at a same time.
+~Shift Z    To see wireframe.
+~NUM1       To front view.
+~NUM3       To side view.
+
+
